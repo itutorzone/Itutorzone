@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITutor Zone</title>
+    <link rel="stylesheet" href="ITutor.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f374653b77.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="images/Logo.png" alt="ITutorZone Logo" style="width: 250px; height: 80px;">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#trainings" class="nav-link">Trainings</a></li>
+            <li><a href="#trainings" class="nav-link">Get Tutor</a></li>
+            <li><a href="#trainings" class="nav-link">Internships</a></li>
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li><a href="#applicationForm" class="nav-link">Contact Us</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline poster="fallback-image.jpg">
+            <source src="images/6804109-uhd_4096_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+            <div>
+                <h1 style="padding-top: 100px;">Welcome to ITutorZone</h1>
+                <a href="#trainings" class="cta" style="margin-bottom: 100px;">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="bg-gray-100 min-h-screen flex items-center justify-center px-6 py-12" id="about">
+        <div class="max-w-3xl text-center">
+            <h1 style="text-align: center; margin-top: 50px;color: #1e3a8a;">
+                Welcome to <span class="text-blue-600">ITutor-Zone</span>
+            </h1>
+            <h4 style="color: #60a5fa; text-align: center; margin-top: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Your Trusted Partner for IT Learning, Tutoring & Career Growth
+            </h4>
+            <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: justify; padding-top: 10px;">
+                Welcome to ITutor-Zone – your reliable partner for IT learning, personalized tutoring, soft skills development, and interview preparation. We are committed to empowering students, job seekers, and professionals with the technical knowledge and communication skills needed to thrive in today’s competitive IT industry. Our expert-led training programs focus on real-time learning, subject-specific guidance, and practical exposure to help you build confidence and grow your career. Whether you're a beginner or aiming for your dream job, ITutor-Zone offers a supportive environment tailored to your learning pace and goals. We believe in quality education, interactive learning methods, and continuous progress tracking to ensure every learner gets the attention and results they deserve. From basic concepts to advanced topics, ITutor-Zone is here to guide you every step of the way.<br>
+                <span style="color: #1e3a8a;">Please Note:</span><span style="color: red;"> ITutor-Zone focuses solely on skill development and learning support. We do not offer job guarantees or placement commitments.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="offer-section" id="trainings">
+        <div class="container">
+            <h2 class="section-title" style="color: #1e3a8a; font-size: 40px;">What We Offer</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <img src="images/OnlineInternships.jpeg" alt="Online Internships" class="offer-icon">
+                    <h3>Online Internships</h3>
+                    <p>Gain real-world experience and industry exposure through flexible, mentor-guided online internships.</p>
+                    <a href="#applicationForm" class="course-cta mt-2">Get Internships</a>
+                </div>
+                <div class="offer-card">
+                    <img src="images/OnlineTrainings.jpg" alt="Online Trainings" class="offer-icon">
+                    <h3>Online Trainings</h3>
+                    <p>Master in-demand technologies from the comfort of your home with ITutorZone’s immersive online training programs.</p>
+                    <a href="#applicationForm" class="course-cta mt-2">Get Trainings</a>
+                </div>
+                <div class="offer-card">
+                    <img src="images/Live-IT-Tuition.jpg" alt="Live IT Tuition" class="offer-icon">
+                    <h3>Live IT Tuitions</h3>
+                    <p>Accelerate your academic success with Live IT Tuition — personalized, real-time support from expert instructors.</p>
+                    <a href="#applicationForm" class="course-cta mt-2">Get Tuitions</a>
+                </div>
+                <div class="offer-card">
+                    <img src="images/Softskills.jpg" alt="Live IT Tuition" class="offer-icon">
+                    <h3>SoftSkills Sessions</h3>
+                    <p>Enhance your confidence and career growth with our live, personalized soft skills and communication training from industry experts.</p>
+                    <a href="#applicationForm" class="course-cta mt-2">Get Tuitions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses-section" id="trainings1">
+        <div class="container">
+            <h2 class="section-title text-center" style="color: #1e3a8a;">Our Courses</h2>
+            <div class="courses-list">
+                <div class="course-item">
+                    <div class="globe-orb">
+                        <img src="images/AI.png" alt="AI & ML Icon" class="course-icon">
+                        <div class="halo-ring"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Master AI and ML with hands-on projects and expert-led training.</p>
+                        <a href="#applicationForm" class="course-cta">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="globe-orb">
+                        <img src="images/python.png" alt="Python Full Stack Icon" class="course-icon">
+                        <div class="halo-ring"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Python Full Stack</h3>
+                        <p>Build dynamic web apps with Python, Django, and front-end tools.</p>
+                        <a href="#applicationForm" class="course-cta">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="globe-orb">
+                        <img src="images/java.png" alt="Java Full Stack Icon" class="course-icon">
+                        <div class="halo-ring"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Java Full Stack</h3>
+                        <p>Develop robust apps with Java, Spring, and modern frameworks.</p>
+                        <a href="#applicationForm" class="course-cta">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="globe-orb">
+                        <img src="images/Testing.png" alt="Automation Testing Icon" class="course-icon">
+                        <div class="halo-ring"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Automation Testing</h3>
+                        <p>Learn to automate testing with modern tools and frameworks.</p>
+                        <a href="#applicationForm" class="course-cta">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="globe-orb">
+                        <img src="images/Digital Marketing.png" alt="Digital Marketing Icon" class="course-icon">
+                        <div class="halo-ring"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing</h3>
+                        <p>Master SEO, SEM, and social media marketing strategies.</p>
+                        <a href="#applicationForm" class="course-cta">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="tutor">
+        <div class="container">
+            <div class="header">
+                <span class="tab">Why Choose ITutorZone?</span>
+                <h2 style="color: #1e3a8a;">Reasons to Choose ITutorZone</h2>
+                <p>At ITutorZone, we focus on delivering practical, student-centered learning that builds strong foundations and real results. Our goal is to make learning easy, flexible, and effective for every student.</p>
+            </div>
+            <div class="content">
+                <div class="image">
+                    <img src="images/WhyChooseITutor.jpeg" alt="Professional Image">
+                </div>
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="icon"><span>❄️</span></div>
+                        <h3>✅ Personalized Learning</h3>
+                        <p>Tailored lessons to match your pace and learning style.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>🎓 Expert Tutors</h3>
+                        <p>Learn from industry professionals with years of experience.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><span>👤</span></div>
+                        <h3>💡 Real-Time Interaction</h3>
+                        <p>Engage with tutors live for immediate feedback.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><i class="fas fa-clock"></i></div>
+                        <h3>🌐 Flexible & Convenient</h3>
+                        <p>Schedule classes that fit your busy lifestyle.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><span>💰</span></div>
+                        <h3>💰 Affordable and Transparent</h3>
+                        <p>Clear pricing with no hidden costs.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><span>📞</span></div>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock assistance for all your queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Our Students' Feedback</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-container">
+                <div class="testimonial-card">
+                    <div class="icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"Expert Tutors offers unmatched flexibility! I can schedule classes anytime, and the online platform is incredibly convenient."</p>
+                    <div class="student">
+                        <img src="images/Sandy.jpg" alt="Student 1">
+                        <div>
+                            <h4>Sandeep.V</h4>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The tutors are patient, and I love learning at my own pace. The platform is so easy to navigate!"</p>
+                    <div class="student">
+                        <img src="images/Ruchi.jpg" alt="Student 2">
+                        <div>
+                            <h4>Ruchitha.K</h4>
+                            <span>Telangana</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"With 24/7 access and a mobile app, studying has never been easier. Expert Tutors rocks!"</p>
+                    <div class="student">
+                        <img src="images/RK.jpg" alt="Student 3">
+                        <div>
+                            <h4>Ramakrishna.G</h4>
+                            <span>Hyderabad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"I can study from anywhere, and scheduling is a breeze. Highly recommend Expert Tutors!"</p>
+                    <div class="student">
+                        <img src="images/SaiKumarBhogadi_page-0001.jpg" alt="Student 4">
+                        <div>
+                            <h4>Saikumar.B</h4>
+                            <span>Vijayawada</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p>"The online classes are seamless, and the tutors are always there when I need them."</p>
+                    <div class="student">
+                        <img src="images/student5.jpg" alt="Student 5">
+                        <div>
+                            <h4>Vikram M.</h4>
+                            <span>Warangal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <body>
+        <div class="card-body">
+            <h2 class="card-title text-center mb-4" style="color: #1e3a8a;">ITutorZone Application Form</h2>
+          <div class="container">
+            <div class="row">
+                <div class=" col-lg-2 col-md-6 col-sm-12 mb-3"></div>
+                <div class=" col-lg-8 col-md-6 col-sm-12 mb-3">
+
+            <form id="applicationForm">
+                <div class="row">
+                    
+                    <div class="  col-md-6  mb-3">
+                        <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email ID <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="yearOfPassout" class="form-label">Year of Passout <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="yearOfPassout" name="yearOfPassout" placeholder="e.g., 2023" required>
+                </div>
+                <div class="mb-3">
+                    <label for="graduation" class="form-label">Graduation <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="graduation" name="graduation" placeholder="e.g., B.Tech, BCA" required>
+                </div>
+                <div class="mb-3">
+                    <label for="itutorService" class="form-label">ITutor Service <span class="text-danger">*</span></label>
+                    <select class="form-select" id="itutorService" name="itutorService" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Trainings">Trainings</option>
+                        <option value="Internships">Internships</option>
+                        <option value="IT Tutions">IT Tutions</option>
+                        <option value="Softskill Sessions">Softskill Sessions</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Contact Number <span class="text-danger">*</span></label>
+                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="howToJoin" class="form-label">How do you know about ITutor <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="howToJoin" name="howToJoin" rows="5" placeholder="Share your interest or plan to join ITutor" required></textarea>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <div id="form-message" class="alert d-none mt-3" role="alert"></div>
+                </div>
+            </form>
+        </div>
+        <div class=" col-lg-2 col-md-6 col-sm-12 mb-3"></div>
+
+    </div>
+  </div>
+        </div>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wave"></div>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Expert Tutors</h3>
+                <p>Empowering students with flexible and convenient learning solutions. Join us to achieve academic excellence!</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#trainings1"><i class="fas fa-book"></i> Courses</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#applicationForm"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana, India</p>
+                <p><i class="fas fa-phone"></i> +91 9346887232 </p>
+                <p><i class="fas fa-envelope"></i> itutorzone@gmail.com</p>
+            </div>
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" aria-label="Email for newsletter">
+                    <button type="button"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>© 2025 Expert Tutors. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navbar Toggle, Single-Page Navigation, Testimonial Slider, Form Validation, EmailJS, and Scroll Effect -->
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            console.log('Scroll position:', window.scrollY);
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Initialize EmailJS with your User ID
+        (function(){
+            emailjs.init("YOUR_EMAILJS_USER_ID"); // Replace with your actual User ID from https://dashboard.emailjs.com/admin/account
+        })();
+
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth Scroll Navigation
+        document.querySelectorAll('.nav-link, .course-cta, .cta').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+
+                    document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                    link.classList.add('active');
+
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Highlight Active Link on Scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                    const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            });
+        });
+
+        // Testimonial Slider
+        const container = document.querySelector('.testimonial-container');
+        const cards = document.querySelectorAll('.testimonial-card');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+        let currentIndex = 0;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function updateSlider() {
+            const cardWidth = cards[0].offsetWidth + 20;
+            const sliderWidth = container.parentElement.offsetWidth;
+            const visibleCards = Math.floor(sliderWidth / cardWidth);
+            const maxIndex = Math.max(0, cards.length - visibleCards);
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+            if (currentIndex < 0) currentIndex = 0;
+            container.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex >= maxIndex;
+        }
+
+        function handleSwipe() {
+            const swipeDistance = touchStartX - touchEndX;
+            const sliderWidth = container.parentElement.offsetWidth;
+            const cardWidth = cards[0].offsetWidth + 20;
+            const visibleCards = Math.floor(sliderWidth / cardWidth);
+            const maxIndex = Math.max(0, cards.length - visibleCards);
+            if (swipeDistance > 50 && currentIndex < maxIndex) {
+                currentIndex++;
+            } else if (swipeDistance < -50 && currentIndex > 0) {
+                currentIndex--;
+            }
+            updateSlider();
+        }
+
+        nextBtn.addEventListener('click', () => {
+            const sliderWidth = container.parentElement.offsetWidth;
+            const cardWidth = cards[0].offsetWidth + 20;
+            const visibleCards = Math.floor(sliderWidth / cardWidth);
+            const maxIndex = Math.max(0, cards.length - visibleCards);
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+        });
+
+        container.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+
+        container.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        let autoSlide = setInterval(() => {
+            const sliderWidth = container.parentElement.offsetWidth;
+            const cardWidth = cards[0].offsetWidth + 20;
+            const visibleCards = Math.floor(sliderWidth / cardWidth);
+            const maxIndex = Math.max(0, cards.length - visibleCards);
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            } else {
+                clearInterval(autoSlide);
+            }
+        }, 5000);
+
+        [prevBtn, nextBtn, ...dots].forEach(el => {
+            el.addEventListener('click', () => {
+                clearInterval(autoSlide);
+                autoSlide = setInterval(() => {
+                    const sliderWidth = container.parentElement.offsetWidth;
+                    const cardWidth = cards[0].offsetWidth + 20;
+                    const visibleCards = Math.floor(sliderWidth / cardWidth);
+                    const maxIndex = Math.max(0, cards.length - visibleCards);
+                    if (currentIndex < maxIndex) {
+                        currentIndex++;
+                        updateSlider();
+                    } else {
+                        clearInterval(autoSlide);
+                    }
+                }, 5000);
+            });
+        });
+
+        window.addEventListener('resize', updateSlider);
+        updateSlider();
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init("u0wTw6grGrK-9tkwK"); // Your EmailJS User ID
+    })();
+
+    document.getElementById("applicationForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = document.getElementById("applicationForm");
+        const messageDiv = document.getElementById("form-message");
+        const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            yearOfPassout: document.getElementById("yearOfPassout").value,
+            graduation: document.getElementById("graduation").value,
+            itutorService: document.getElementById("itutorService").value,
+            contactNumber: document.getElementById("contactNumber").value,
+            howToJoin: document.getElementById("howToJoin").value,
+            time: new Date().toLocaleString()
+        };
+
+        // Clear previous messages
+        messageDiv.classList.remove("alert-success", "alert-danger", "d-none");
+        messageDiv.innerHTML = "";
+        console.log("Form submission started");
+
+        // Function to reset form
+        function resetForm() {
+            form.reset();
+            document.getElementById("itutorService").selectedIndex = 0;
+            // Fallback: manually clear inputs if reset fails
+            document.getElementById("firstName").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("yearOfPassout").value = "";
+            document.getElementById("graduation").value = "";
+            document.getElementById("contactNumber").value = "";
+            document.getElementById("howToJoin").value = "";
+            console.log("Form reset executed");
+        }
+
+        // Send email to admin
+        emailjs.send("service_hp037gb", "template_b973sx2", formData)
+            .then(function(response) {
+                console.log("Admin Email Sent Successfully!", response.status, response.text);
+                // Send auto-reply email
+                emailjs.send("service_hp037gb", "template_hc74npj", formData)
+                    .then(function(response) {
+                        console.log("Auto-reply Sent Successfully!", response.status, response.text);
+                        messageDiv.classList.add("alert-success");
+                        messageDiv.innerHTML = "Your application has been submitted successfully!";
+                        resetForm();
+                    }, function(error) {
+                        console.error("Auto-reply Failed:", error.text || error);
+                        messageDiv.classList.add("alert-danger");
+                        messageDiv.innerHTML = "Application submitted, but auto-reply failed. Please contact support.";
+                        resetForm();
+                    });
+            }, function(error) {
+                console.error("Admin Email Failed:", error.text || error);
+                messageDiv.classList.add("alert-danger");
+                let errorMessage = "Failed to submit application. Please try again.";
+                if (error.text && error.text.includes("Invalid grant")) {
+                    errorMessage = "Failed to submit application. Gmail authentication error. Please contact the administrator to reconnect the Gmail account.";
+                }
+                messageDiv.innerHTML = errorMessage;
+            });
+    });
+</script>
+</body>
+
+</html>
